@@ -1,0 +1,31 @@
+#rectangle {
+    width: 300px;
+    height: 400px;
+    background-color: #2e3131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #rectangle img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  
+  #rectangle p {
+    color: white;
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
