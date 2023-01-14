@@ -1,0 +1,58 @@
+@media (min-width: 1200px) {
+	/* DESKTOP SIZE*/
+		main {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		main {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: grid;
+			font-size: 0.8rem;
+			grid-column-gap: 100px;
+		}
+		
+		.type-info {
+			font-size: 20px;
+		}
+		
+		main section {
+			margin: 0.5rem;
+			padding: 0 1rem;
+			border-radius: 20px;
+			background-color: #DAE2B6;
+			box-shadow: 5px 5px 5px #000000, -2px -2px 2px #ffffff;
+			animation: background-change 5s linear infinite;
+			grid-template-columns: 2fr; 
+			position: relative;
+		}
+		
+
+		main section:nth-child(3) {
+			grid-column: span 1;
+		}
+
+		
+		main section picture {
+			display:inline;
+		}
+
+		main section picture img {
+			width: 100%;
+			min-height: auto;
+			border: 1px solid #bbb;
+		}
+	
+	
+		main section:nth-child(2) {
+			display:block;
+			margin: 0.5rem;
+		}
+	
+		.colimage {
+			box-shadow: 0 0 30px #333;
+		} 
+		
+		
+
+}
