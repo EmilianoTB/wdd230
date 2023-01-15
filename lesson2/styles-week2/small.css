@@ -21,7 +21,7 @@ main section {
     border-radius: 20px;
     background-color: #DAE2B6;
     box-shadow: 7px 7px 7px  #000000, -2px -2px 2px  #ffffff;
-    animation: background-change 5s linear infinite;
+    animation: background-change 10s linear infinite;
     grid-template-columns: 2fr; 
 }
 
