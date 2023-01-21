@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bree+Serif&family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	
+	font-family: 'Barlow', sans-serif;
+	background-color: #EAD637;
+	
+}
+
+/* phone or baseline views **************************/
+header,
+footer {
+	background-color: #1B512D;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	padding: .75rem;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header,
+main,
+footer {
+	
+	margin: 0 auto;
+	padding: 30px;
+	
+}
+
+
+
+table, th, td {
+    border: 5px solid rgb(138, 136, 136);
+    border-collapse: collapse;
+  }
+
+td {
+	padding: 10px;
+}
+
+nav {
+
+	margin: 0 auto;
+	/*max-width: 780px*/
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+	background-color: #25B34D;
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, yellow, transparent) bottom /
+		var(--d, 0) 3px no-repeat;
+	transition: 0.5s;
+}
+
+
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+	
+}
+
+main article {
+	margin: 1rem;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+	background-color: #eee;
+}
+main article ul {
+	margin: 1rem 0 0 1rem;
+}
+
+main picture {
+	display:inline;
+}
+
+main picture img{
+	width: 100%;
+    min-height: auto;
+}
+
+
+footer p {
+	text-align: center;
+	padding: 20px;
+}
+
+.sample-siteheader{
+	font-family: 'Bree Serif', serif;
+	font-family: 'Playfair Display', serif;
+	font-size: 25px;
+	color: #CBA328;
+
+}
+
+
+.primary-navigation{
+	font-family: 'Bree Serif', serif;
+	font-size: 23px;
+	font-family: 'Lato', sans-serif;
+	
+}
+
+.footer-navigation{
+	font-family: 'Bree Serif', serif;
+	font-size: 23px;
+	font-family: 'Lato', sans-serif;
+}
+
+h1{
+	font-size: 25px;
+}
+
+h2{
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+}
+
+h3{
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+}
+
+
+.paragraph-text{
+	font-size: 15px;
+	
+}
+

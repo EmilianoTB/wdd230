@@ -1,0 +1,70 @@
+/* Desktop Views ****************************/
+@media (min-width: 1245px) {
+
+
+
+
+	nav a {
+		font-size: 1.1rem;
+	}
+ 
+
+	header{
+		max-width: 100%;
+		
+	}
+
+	nav{
+		margin: 0 auto;
+		
+	}
+		
+	nav ul {
+		display: grid;
+ 		grid-template-columns: repeat(3, 1fr); 
+		/* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+	} 
+
+	main{
+		max-width: 900px;
+		font-size: 35px !important;
+	}
+
+	.sample-siteheader{
+		font-family: 'Bree Serif', serif;
+		font-family: 'Playfair Display', serif;
+		font-size: 60px !important;
+		color: #CBA328;
+	
+	}
+	
+	
+	.primary-navigation{
+		font-family: 'Bree Serif', serif;
+		font-size: 50px !important;
+		
+	}
+	
+	.footer-navigation{
+		font-family: 'Bree Serif', serif;
+		font-size: 50px !important;
+	}
+	
+	h1{
+		font-size: 40px !important;
+	}
+	
+	h2{
+		font-size: 36px !important;
+	}
+	
+	h3{
+		font-size: 35px !important;
+	}
+	
+	
+	.paragraph-text{
+		font-size: 30px !important;
+	}
+
+}
