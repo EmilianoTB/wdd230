@@ -73,11 +73,13 @@
 	
 	.footer-navigation{
 		font-family: 'Bree Serif', serif;
-		font-size: 35px !important;
+		font-size: 30px !important;
 	}
 	
 	h1{
 		font-size: 30px !important;
+		font-family: 'Bree Serif', serif;
+		font-family: 'Playfair Display', serif
 	}
 	
 	h2{

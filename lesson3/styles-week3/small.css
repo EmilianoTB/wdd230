@@ -122,12 +122,14 @@ footer p {
 
 .footer-navigation{
 	font-family: 'Bree Serif', serif;
-	font-size: 23px;
+	font-size: 20px;
 	font-family: 'Lato', sans-serif;
 }
 
 h1{
 	font-size: 25px;
+	font-family: 'Bree Serif', serif;
+	font-family: 'Playfair Display', serif
 }
 
 h2{

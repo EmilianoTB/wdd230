@@ -86,28 +86,28 @@ const changePrimaryNavigation = document.querySelector(".primaryNavigation");
 const changeFooterNavigation = document.querySelector(".footerNavigation");
   
   if (mq1.matches) {
-      changeFooterNavigation.innerHTML = "50 px";
-    } else if (mq2.matches) {
       changeFooterNavigation.innerHTML = "35 px";
+    } else if (mq2.matches) {
+      changeFooterNavigation.innerHTML = "30 px";
     } else {
-      changeFooterNavigation.innerHTML = "23 px";
+      changeFooterNavigation.innerHTML = "20 px";
     }
     
     mq1.addEventListener("change", (event) => {
-      if (event.matches) {
-        changeFooterNavigation.innerHTML = "50 px";
-      }
-    });
-    
-    mq2.addEventListener("change", (event) => {
       if (event.matches) {
         changeFooterNavigation.innerHTML = "35 px";
       }
     });
     
+    mq2.addEventListener("change", (event) => {
+      if (event.matches) {
+        changeFooterNavigation.innerHTML = "30 px";
+      }
+    });
+    
     window.addEventListener("resize", () => {
       if (window.innerWidth < 768) {
-        changeFooterNavigation.innerHTML = "23 px";
+        changeFooterNavigation.innerHTML = "20 px";
       }
     });
 
@@ -170,7 +170,7 @@ const changeHeadingTwo = document.querySelector(".heading-2");
 const changeHeadingThree = document.querySelector(".heading-3");
   
       if (mq1.matches) {
-          changeHeadingThree.innerHTML = "35 px";
+          changeHeadingThree.innerHTML = "33 px";
         } else if (mq2.matches) {
           changeHeadingThree.innerHTML = "23 px";
         } else {
@@ -179,7 +179,7 @@ const changeHeadingThree = document.querySelector(".heading-3");
         
         mq1.addEventListener("change", (event) => {
           if (event.matches) {
-            changeHeadingThree.innerHTML = "35 px";
+            changeHeadingThree.innerHTML = "33 px";
           }
         });
         
@@ -198,27 +198,27 @@ const changeHeadingThree = document.querySelector(".heading-3");
 const changeParagraphText = document.querySelector(".paragraphText");
   
       if (mq1.matches) {
-          changeParagraphText.innerHTML = "35 px";
+          changeParagraphText.innerHTML = "30 px";
         } else if (mq2.matches) {
-          changeParagraphText.innerHTML = "23 px";
+          changeParagraphText.innerHTML = "20 px";
         } else {
-          changeParagraphText.innerHTML = "18 px";
+          changeParagraphText.innerHTML = "15 px";
         }
         
         mq1.addEventListener("change", (event) => {
           if (event.matches) {
-            changeParagraphText.innerHTML = "35 px";
+            changeParagraphText.innerHTML = "30 px";
           }
         });
         
         mq2.addEventListener("change", (event) => {
           if (event.matches) {
-            changeParagraphText.innerHTML = "23 px";
+            changeParagraphText.innerHTML = "20 px";
           }
         });
         
         window.addEventListener("resize", () => {
           if (window.innerWidth < 768) {
-            changeParagraphText.innerHTML = "18 px";
+            changeParagraphText.innerHTML = "15 px";
           }
         });
