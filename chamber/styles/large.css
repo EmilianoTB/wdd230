@@ -1,6 +1,111 @@
 /* Desktop Views ****************************/
 @media (min-width: 1446px) {
 
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		
+		font-family: 'Barlow', sans-serif;
+		background-color: #EAD637;
+		padding: 0;
+		margin: 0;
+	}
+
+	header { 
+		background-color: #1B512D;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 200px;
+		padding: 5px 10%;
+
+	}
+
+	/* header nav list start ----------------- */
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		
+	}
+
+	nav .mainMenu {
+		display: flex ;
+		list-style: none ;
+
+	}
+
+	nav .mainMenu li a{
+		display: inline-block ;
+		padding: 20px;
+		font-size: 25px;
+		color: white;
+		
+	}
+
+	nav .mainMenu li a:hover{
+		color: #36c165;
+		transition: all 1s;
+		transform: scale(1.2);
+	}
+
+	nav .openMenu , .closeMenu{
+		display: none;
+		cursor: pointer;
+
+	}
+
+	/* header logo start ------------------- */
+
+	header .logo_header {
+		display: flex;
+		display:inline;
+		cursor: pointer;
+	}
+	header .logo_header img {
+		width: 70%;
+		transition: all 1s;
+	}
+	header .logo_header img:hover {
+		transform: scale(1.2);
+	}
+
+	/* header logo end ------------------- */
+
+
+	/* facebook and github logos start ----------- */
+	.icons {
+		
+		display: inline;
+		align-items: center;
+		font-size: 40px;
+		margin: 15px 0px 0px 50px;
+		width: 100px;
+		color: white;
+	}
+
+	.fa-facebook:hover{
+		color: #3C5A9B;
+	}
+	
+	.fa-github:hover{
+		color: #000000;
+	}
+
+	
+
+	
+
+
+
+	/* facebook and github logos end ----------- */
+	
+	
+	/* header nav list end ----------------- */
 
 	.footer-section{
 		display: grid;
@@ -18,6 +123,86 @@
 		font-size: 60px !important;
 		color: #CBA328;
 	
+	}
+
+
+	/* date start ----------------- */
+	.date {
+		background-color:#246b3c;
+		color: white;
+		text-align: center;
+		margin-top: -50px;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 0px 10px 0px;
+	}
+	/* date end ----------------- */
+
+	/* footer logo start ----------------- */
+	footer  img{
+		display: flex;
+		display:inline;
+		cursor: pointer;
+		width: 90%;
+		transition: all 1s;
+		margin: 0px 0px 0px 20px;
+		
+		
+	}
+
+	footer img:hover {
+		transform: scale(1.2);
+	}
+	/* footer logo end ----------------- */
+
+	/* section 1 start footer section ----------------- */
+	.left-section{
+		text-align: left;
+		
+	}
+
+	/* section 1 end footer section ----------------- */
+
+
+	/* phone or baseline views **************************/
+
+	footer {
+		color: white;
+		background-color: #1B512D;
+		align-items: center;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		display: grid;
+		
+		
+	}
+
+	.footer-section{
+		
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		
+	}
+
+
+	main,
+	footer {
+		margin: 0 auto;
+		padding: 30px;  
+	}
+		
+
+	footer p {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.sample-siteheader{
+		font-family: 'Bree Serif', serif;
+		font-family: 'Playfair Display', serif;
+		font-size: 25px;
+		color: #CBA328;
+
 	}
 	
 	

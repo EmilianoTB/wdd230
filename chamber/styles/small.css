@@ -2,211 +2,255 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Playfair+Display:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+@media (max-width: 990px) {
 
-body {
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		
+		font-family: 'Barlow', sans-serif;
+		background-color: #EAD637;
+		padding: 0;
+		margin: 0;
+	}
+
+	header { 
+		background-color: #1B512D;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 200px;
+		padding: 5px 10%;
+
+	}
+
+	/* header logo start ------------------- */
+
+	header .logo_header {
+		display: flex;
+		display:inline;
+		cursor: pointer;
+	}
+	header .logo_header img {
+		width: 80%;
+		transition: all 1s;
+	}
+	header .logo_header img:hover {
+		transform: scale(1.2);
+	}
+
+	/* header logo end ------------------- */
+
+
+	/* facebook and whatsap logos start ----------- */
+	.social-media-logos {
+
+		display:inline-flex;
+		cursor: pointer;
+	}
+
+	header .social-media-logos{
+		width: 200px;
+		margin: 15px;
+	}
+
+	header .social-media-logos .logo{
+		width: 50%;
+		min-height: auto;
+		transition: all 1s;
+		margin-right: 20px;
+		
+	}
+	header .social-media-logos img:hover{
+		transform: scale(1.2);
+	}
+	/* facebook and whatsap logos end ----------- */
+
+	/* mobile view nav start ----------*/
+
+	nav .mainMenu {
+		height: 40vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: top 1s ease;
+		background-color: #1B512D;
+		display: none;
+		list-style: none;
+		font-size: 2em;
+
+	}
+
+	nav .mainMenu .closeMenu{
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		color: white;
+
+
+	}
+
+	nav .openMenu{
+		display: block;
+		font-size: 50px;
+		color: white;
+	}
+
+	nav .mainMenu li a{
+		color: white;
+		font-size: 30px;
+	}
+
+	nav ul li:hover{
+		background-color: #36c165;
+		font-size: 1.6rem;
+	}
+
+	.icons {
+		
+		display: inline;
+		align-items: center;
+		font-size: 50px;
+		
+		
+		color: white;
+	}
+
+	.fa-facebook:hover{
+		color: #3C5A9B;
+	}
 	
-	font-family: 'Barlow', sans-serif;
-	background-color: #EAD637;
-	padding: 0;
-	margin: 0;
-}
-
-header { 
-	background-color: #1B512D;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 200px;
-	padding: 5px 10%;
-
-}
-
-/* header logo start ------------------- */
-
-header .logo_header {
-    display: flex;
-	display:inline;
-	cursor: pointer;
-}
-header .logo_header img {
-    width: 100%;
-	transition: all 1s;
-}
-header .logo_header img:hover {
-    transform: scale(1.2);
-}
-
-/* header logo end ------------------- */
+	.fa-github:hover{
+		color: #000000;
+	}
 
 
-/* facebook and whatsap logos start ----------- */
-.social-media-logos {
-
-	display:inline-flex;
-	cursor: pointer;
-}
-
-header .social-media-logos{
-	width: 200px;
-	margin: 15px;
-}
-
-header .social-media-logos .logo{
-	width: 50%;
-    min-height: auto;
-	transition: all 1s;
-	margin-right: 20px;
-	
-}
-header .social-media-logos img:hover{
-	transform: scale(1.2);
-}
-/* facebook and whatsap logos end ----------- */
-
-/* header nav list start ----------------- */
-
-header nav{
-	width: 100%;
-	align-self: center;
-	
-}
-
-header nav ul li{
-	list-style: none;
-	display:inline-flex;
-	padding: 0 50px ;	
-}
-header nav ul li a{
-	color: white;
-}
-
-header nav ul li:hover{
-	transform: scale(1.1);
-}
+	/* mobile view nav end ----------*/
 
 
-header nav ul li a:hover{
-	color: #00bb41;
-}
-/* header nav list end ----------------- */
+	/* date start ----------------- */
+	.date {
+		background-color:#246b3c;
+		color: white;
+		text-align: center;
+		margin-top: -50px;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 0px 10px 0px;
+	}
+	/* date end ----------------- */
 
-/* date start ----------------- */
-.date {
-	background-color:#246b3c;
-	color: white;
-	text-align: center;
-	margin-top: -50px;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding: 10px 0px 10px 0px;
-}
-/* date end ----------------- */
+	/* footer logo start ----------------- */
+	footer  img{
+		display: flex;
+		display:inline;
+		cursor: pointer;
+		width: 90%;
+		transition: all 1s;
+		margin: 0px 0px 0px 20px;
+		
+		
+	}
 
-/* footer logo start ----------------- */
-footer  img{
-    display: flex;
-	display:inline;
-	cursor: pointer;
-	width: 90%;
-	transition: all 1s;
-	margin: 0px 0px 0px 20px;
-	
-	
-}
+	footer img:hover {
+		transform: scale(1.2);
+	}
+	/* footer logo end ----------------- */
 
-footer img:hover {
-    transform: scale(1.2);
-}
-/* footer logo end ----------------- */
+	/* section 1 start footer section ----------------- */
+	.left-section{
+		text-align: left;
+		
+	}
 
-/* section 1 start footer section ----------------- */
-.left-section{
-	text-align: left;
-	
-}
-
-/* section 1 end footer section ----------------- */
+	/* section 1 end footer section ----------------- */
 
 
-/* phone or baseline views **************************/
+	/* phone or baseline views **************************/
 
-footer {
-	color: white;
-	background-color: #1B512D;
-	align-items: center;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	display: grid;
-	
-	
-}
+	footer {
+		color: white;
+		background-color: #1B512D;
+		align-items: center;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		display: grid;
+		
+		
+	}
 
-.footer-section{
-	
-	text-align: center;
-	align-items: center;
- 	justify-content: center;
-	
-}
+	.footer-section{
+		
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		
+	}
 
 
-main,
-footer {
-	margin: 0 auto;
-	padding: 30px;  
-}
-	 
+	main,
+	footer {
+		margin: 0 auto;
+		padding: 30px;  
+	}
+		
 
-footer p {
-	text-align: center;
-	padding: 20px;
-}
+	footer p {
+		text-align: center;
+		padding: 20px;
+	}
 
-.sample-siteheader{
-	font-family: 'Bree Serif', serif;
-	font-family: 'Playfair Display', serif;
-	font-size: 25px;
-	color: #CBA328;
+	.sample-siteheader{
+		font-family: 'Bree Serif', serif;
+		font-family: 'Playfair Display', serif;
+		font-size: 25px;
+		color: #CBA328;
+
+	}
+
+
+	.primary-navigation{
+		font-family: 'Bree Serif', serif;
+		font-size: 23px;
+		font-family: 'Lato', sans-serif;
+		
+	}
+
+	.footer-navigation{
+		font-family: 'Bree Serif', serif;
+		font-size: 20px;
+		font-family: 'Lato', sans-serif;
+	}
+
+	h1{
+		font-size: 25px;
+		font-family: 'Bree Serif', serif;
+		font-family: 'Playfair Display', serif
+	}
+
+	h2{
+		font-size: 20px;
+		font-family: 'Lato', sans-serif;
+	}
+
+	h3{
+		font-size: 18px;
+		font-family: 'Lato', sans-serif;
+	}
+
+
+	.paragraph-text{
+		font-size: 15px;
+		
+	}
 
 }
-
-
-.primary-navigation{
-	font-family: 'Bree Serif', serif;
-	font-size: 23px;
-	font-family: 'Lato', sans-serif;
-	
-}
-
-.footer-navigation{
-	font-family: 'Bree Serif', serif;
-	font-size: 20px;
-	font-family: 'Lato', sans-serif;
-}
-
-h1{
-	font-size: 25px;
-	font-family: 'Bree Serif', serif;
-	font-family: 'Playfair Display', serif
-}
-
-h2{
-	font-size: 20px;
-	font-family: 'Lato', sans-serif;
-}
-
-h3{
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
-}
-
-
-.paragraph-text{
-	font-size: 15px;
-	
-}
-

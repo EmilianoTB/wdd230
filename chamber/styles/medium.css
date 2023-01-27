@@ -1,52 +1,215 @@
 /* Tablet Views ******************************/
 @media (min-width: 991px) and (max-width: 1445px) {
-	
 
-	/* Horizontal Menu Examples */
-	/* Flex *********************/
-  /*	nav ul { display: flex; }
-		  nav ul li { flex: 1 1 auto; } 
- */
-	/* Grid *********************/
-	nav{
-		margin: 0 auto;
-		max-width: 1245px;
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		
+		font-family: 'Barlow', sans-serif;
+		background-color: #EAD637;
+		padding: 0;
+		margin: 0;
+	}
+
+	header { 
+		background-color: #1B512D;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 200px;
+		padding: 5px 10%;
+
+	}
+
+	/* header logo start ------------------- */
+
+	header .logo_header {
+		display: flex;
+		display:inline;
+		cursor: pointer;
+	}
+	header .logo_header img {
+		width: 70%;
+		transition: all 1s;
+	}
+	header .logo_header img:hover {
+		transform: scale(1.2);
+	}
+
+	/* header logo end ------------------- */
+
+
+	/* facebook and whatsap logos start ----------- */
+	.social-media-logos {
+
+		display:inline-flex;
+		cursor: pointer;
+	}
+
+	header .social-media-logos{
+		width: 200px;
+		margin: 15px;
+	}
+
+	header .social-media-logos .logo{
+		width: 50%;
+		min-height: auto;
+		transition: all 1s;
+		margin-right: 20px;
+		
+	}
+	header .social-media-logos img:hover{
+		transform: scale(1.2);
+	}
+	/* facebook and whatsap logos end ----------- */
+
+	/* mobile view nav start ----------*/
+
+	nav .openMenu{
+		display: block;
+		font-size: 50px;
+		color: white;
+	}
+
+	nav .mainMenu {
+		height: 80vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: top 1s ease;
+		background-color: #1B512D;
+		display: none;
+		list-style: none;
+		font-size: 3em;
+		
+
+	}
+
+	nav .mainMenu .closeMenu{
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		color: white;
+	}
+
+	nav ul li{
+		display: block;
+		color: white;
+	}
+
+
+	nav .mainMenu li a{
+		color: white;
+		font-size: 1.6rem;
+		font-size: 40px;
+	}
+
+	nav ul li:hover{
+		background-color: #36c165;
+		font-size: 1.6rem;
+	}
+
+	.icons {
+		
+		display: inline;
+		align-items: center;
+		font-size: 80px;
+		
+		
+		color: white;
+	}
+
+	.fa-facebook:hover{
+		color: #3C5A9B;
+	}
+	
+	.fa-github:hover{
+		color: #000000;
+	}
+
+
+	/* mobile view nav end ----------*/
+
+
+	/* date start ----------------- */
+	.date {
+		background-color:#246b3c;
+		color: white;
+		text-align: center;
+		margin-top: -50px;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding: 10px 0px 10px 0px;
+	}
+	/* date end ----------------- */
+
+	/* footer logo start ----------------- */
+	footer  img{
+		display: flex;
+		display:inline;
+		cursor: pointer;
+		width: 90%;
+		transition: all 1s;
+		margin: 0px 0px 0px 20px;
+		
+		
+	}
+
+	footer img:hover {
+		transform: scale(1.2);
+	}
+	/* footer logo end ----------------- */
+
+	/* section 1 start footer section ----------------- */
+	.left-section{
+		text-align: left;
+		
+	}
+
+	/* section 1 end footer section ----------------- */
+
+
+	/* phone or baseline views **************************/
+
+	footer {
+		color: white;
+		background-color: #1B512D;
+		align-items: center;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		display: grid;
+		
+		
+	}
+
+	.footer-section{
+		
+		text-align: center;
+		align-items: center;
+		justify-content: center;
 		
 	}
 
 
- 	nav ul {
-		display: grid;
-/* 		grid-template-columns: repeat(5, 1fr); */
-		grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
-	} 
+	footer p {
+		text-align: center;
+		padding: 20px;
+	}
+	
 
-	nav a {
-		font-size: 1rem;
-	}
 
-	nav a:hover {
-		/* 	background-color: #bbb;
-	color: #36454f; */
-		--d: 75%;
-	}
 
-	main {
-		grid-template-columns: 1fr 1fr;
-		max-width: 700px;
-		font-size: 20px !important;
-	}
-	article:nth-child(3) {
-		grid-column: span 2;
-	}
-	main picture {
-		display: block;
-	}
-	main picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
+
+
 	
 	footer p {
 		flex-direction: row;

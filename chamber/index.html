@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="styles/large.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
 
     </head>
@@ -28,18 +29,22 @@
             </div>
             
             <nav>
-                <ul>
+                <div class="openMenu"><i class="fa fa-bars"></i></div>
+                <ul class="mainMenu">
+                    <li><a id="menu"></a></li>
                     <li><a href="discover.html"><h4>Discover</h4></a></li>
                     <li><a href="directory.html"><h4>Directory</h4></a></li>
                     <li><a href="join.html"><h4>Join</h4></a></li>
                     <li><a href="contact.html"><h4>Contact</h4></a></li>
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+                    <span class="icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-github"></i>
+                    </span>
                 </ul>
             </nav>
 
-                <div class="social-media-logos">
-                    <img src="images/facebook_logo_mini.png" alt="Logo image cuautla chamber of commerce" class="logo">
-                    <img src="images/whatsapp_mini_logo.png" alt="Logo image cuautla chamber of commerce" class="logo">
-                </div>
+            
 
         </header>
         <div class="date">
@@ -122,7 +127,7 @@
             </div>
 
             <hr>
-            <p>© Cuautla Chamber of Commerce<span id="currentYear"></span> | <b>Emiliano B. Torres</b> | WDD 230 Project | Mexico Last Updated:<span id="lastModified"></span></p>
+            <p>© Cuautla Chamber of Commerce <span id="currentYear"></span> | <b>Emiliano B. Torres</b> | WDD 230 Project | Mexico Last Updated:<span id="lastModified"></span></p>
         </footer>
         
         <script src="scripts/script.js" async defer></script>
