@@ -1,5 +1,5 @@
 /* Tablet Views ******************************/
-@media (min-width: 991px) and (max-width: 1445px) {
+@media (min-width: 767px) and (max-width: 1245px) {
 
 	* {
 		box-sizing: border-box;
@@ -76,7 +76,7 @@
 	}
 
 	nav .mainMenu {
-		height: 80vh;
+		height: 40vh;
 		position: fixed;
 		top: 0;
 		right: 0;
