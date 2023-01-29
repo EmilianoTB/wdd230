@@ -1,5 +1,5 @@
 /* Desktop Views ****************************/
-@media (min-width: 1246px) {
+@media (min-width: 1300px) {
 
 	* {
 		box-sizing: border-box;
@@ -201,7 +201,7 @@
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-		grid-template-rows: repeat(3, minmax(auto, 300px)); /* Creates 5 equal rows */
+		grid-template-rows: repeat(3, minmax(auto, 400px)); /* Creates 5 equal rows */
 		
 	  }
 
