@@ -105,21 +105,28 @@
 		color: white;
 	}
 
+	
+
 	nav .mainMenu li a{
-		color: white;
-		font-size: 30px;
+		display: inline-block ;
+		color: #EAD637;
 	}
 
-	nav ul li:hover{
-		background-color: #36c165;
-		font-size: 1.6rem;
+	nav .mainMenu li a:hover{
+		color: #36c165;
+		transition: all 1s;
+		transform: scale(1.2);
 	}
 
+	.icons-box{
+		padding: 10px;
+	}
+	
 	.icons {
 		
 		display: inline;
 		align-items: center;
-		font-size: 50px;
+		font-size: 50px !important;
 		
 		
 		color: white;
@@ -319,7 +326,7 @@
 		font-family: 'Bree Serif', serif;
 		font-family: 'Playfair Display', serif;
 		font-size: 25px;
-		color: #CBA328;
+		color: #EAD637;
 
 	}
 
