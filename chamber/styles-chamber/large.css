@@ -191,9 +191,10 @@
 	}
 	/* columns design **************************/
 	main{
-		max-width: 1600px;
+		
 		background-color: #e4ce24;
 		margin: 50px;
+		max-width: fit-content;
 	}
 
 	.grid-container {
@@ -398,7 +399,7 @@
 	  /* Thankful transport*/
 	  
 	.box-1 img {
-		width: 40%;
+		width: 80px;
 		transition: all 1s;
 		
 	}
@@ -422,7 +423,7 @@
 
 
 	  .box-2 img {
-		width: 40%;
+		width: 80px;
 		transition: all 1s;
 		
 	}
@@ -443,7 +444,7 @@
 	  }
 
 	  .box-3 img {
-		width: 40%;
+		width: 80px;
 		transition: all 1s;
 		
 	}
