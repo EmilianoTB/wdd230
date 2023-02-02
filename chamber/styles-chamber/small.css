@@ -35,7 +35,7 @@
 		cursor: pointer;
 	}
 	header .logo_header img {
-		width: 80%;
+		max-width: 60%;
 		transition: all 1s;
 	}
 	header .logo_header img:hover {
@@ -149,7 +149,7 @@
 		background-color:#246b3c;
 		color: white;
 		text-align: center;
-		margin-top: -50px;
+		margin-top: -60px;
 		margin-left: 10px;
 		margin-right: 10px;
 		padding: 10px 0px 10px 0px;
@@ -185,7 +185,7 @@
 		main{
 			
 			background-color: #e4ce24;
-			margin: 80px;
+			margin: 10px;
 		}
 	
 		.grid-container {
@@ -211,7 +211,11 @@
 			grid-column: 1 / 2;
 			grid-row: 2 / 2;
 			margin: 5px;
-			
+			width: auto;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
 			
 		  }
 		  /*Weather*/
@@ -220,13 +224,41 @@
 			grid-row: 3 / 3;
 			margin: 5px;
 		  }
+
+		  .square2 img {
+			width: 40%;
+			transition: all 1s;
+			padding: 20px;
+			
+		}
+
+		.weather-icon:hover {
+			transform: scale(1.2);
+		}
+	
+
+
+
+
+
+
+
+
+
+
 		  /*Join*/
 		  .square3 {
 			grid-column: 1 / 2;
 			display: none;
 			margin: 5px;
-			
+			text-align: center;
+			align-items: center;
+			justify-content: center;
 		  }
+
+
+
+
 		  
 		  /* Second column - 1 square box and 1 rectangle box
 		  Hero with site name and call to action */
@@ -234,16 +266,62 @@
 			grid-column: 1 / 2;
 			grid-row: 1 / 1;
 			margin: 5px;
+			background-image: url("../images/cuautla_background_zocalo.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			position: relative;
+			
 			
 		  }
+
+		  .hero-button{
+			position: absolute;
+			bottom: 40px;
+			right: 30px;
+			background-color: #ccb92a;
+			border: 1px solid #ffffff;
+			border-radius: 4px;
+			box-shadow: rgba(255, 255, 255, 0.1) 0 2px 4px 0;
+			box-sizing: border-box;
+			color: #fff;
+			cursor: pointer;
+			outline: none;
+			outline: 0;
+			padding: 10px 25px;
+			text-align: center;
+			transform: translateY(0);
+			transition: transform 150ms, box-shadow 150ms;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
+			}
+		
+			.hero-button:hover {
+			box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+			transform: translateY(-2px);
+			}
+
+
 		  /*New release*/
 		  .rectangle1 {
 			grid-column: 1 / 2;
-			grid-row: 4/4;
+			grid-row: 3 / 3;
 			margin: 5px;
 			
 		  }
-		  
+
+		  .rectangle1 {
+			grid-column: 1 / 2;
+			grid-row: 4 / 4; 
+			margin: 5px;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			padding: 60px;
+		  }
+
+
 		  /* Third column - 1 large rectangle box */
 		  /*Spotlight*/
 		  .rectangle2 {
@@ -251,28 +329,82 @@
 			
 			margin: 5px;
 			display:grid;
+
+			grid-template-columns: auto;
+  			grid-template-rows: auto auto;
 		
 		  }
+
+		 
 		  
 		  .box-1{
 			
 			border: 1px solid rgb(185, 183, 47);
-			padding: 20px;
-			margin: 10px;
-		
+			padding: 5px;
+			margin: 5px;
 			grid-column: 1 / 1;
 			grid-row: 1 / 1; 
-		  }
-	
-		  .box-2{
+		
+			display: flex;
+			display:inline;
+			cursor: pointer;
+
+			justify-content: center;
+			align-items: center;
 			
+			display:inline;
+			text-align: center;
+			
+		
+		  }
+
+		  .box-1 img {
+			max-width: 70px;
+			transition: all 1s;
+			display: flex;
+			display:inline;
+			cursor: pointer;
+		}
+		  .car-icon:hover {
+			transform: scale(1.2);
+		}
+
+
+		  .box-2{
+		
 			border: 1px solid rgb(185, 183, 47);
-			padding: 20px;
-			margin: 10px;
-	
 			grid-column: 1 / 1;
 			grid-row: 2 / 2; 
+			padding: 5px;
+			display: flex;
+			display:inline;
+			text-align: center;
+			padding: 5px;
+			margin: 5px;
+			justify-content: center;
+			align-items: center;
+			
 		  }
+	
+		  .box-2 img {
+			max-width: 70px;
+			transition: all 1s;
+			display: flex;
+			display:inline;
+			cursor: pointer;
+			
+		}
+		  .colors-icon:hover {
+			transform: scale(1.2);
+		}
+
+
+
+
+
+
+
+
 	
 		  .box-3{
 			
@@ -313,7 +445,7 @@
 	main,
 	footer {
 		margin: 0 auto;
-		padding: 30px;  
+		padding: 20px;  
 	}
 		
 

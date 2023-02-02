@@ -1,5 +1,5 @@
 /* Desktop Views ****************************/
-@media (min-width: 1300px) {
+@media (min-width: 1451px) {
 
 	* {
 		box-sizing: border-box;
@@ -169,7 +169,7 @@
 		background-color: #1B512D;
 		align-items: center;
 		border: 1px solid rgba(0, 0, 0, 0.2);
-		display: grid;
+		flex: 0 0 auto;
 		
 		
 		
@@ -193,8 +193,9 @@
 	main{
 		
 		background-color: #e4ce24;
-		margin: 50px;
-		max-width: fit-content;
+		margin: 10px;
+		
+		
 	}
 
 	.grid-container {
