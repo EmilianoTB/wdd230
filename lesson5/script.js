@@ -15,7 +15,7 @@ button.addEventListener("click", function() {
     li.innerHTML = enteredText;
     delete_button.textContent = "❌" // to create innerHTML(property) inside the code you need the variable of the element created and add the text inside the object
     
-
+    
     li.appendChild(delete_button); //append the li element with the delete button
     list.appendChild(li); //append the list element with the li element just created and appended with text and the delete button
 
