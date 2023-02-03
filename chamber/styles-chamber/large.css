@@ -301,18 +301,25 @@
 		grid-column: 1 / 2; 
 		grid-row: 2 / 3;
 		display: flex;
- 		align-items: flex-start;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
 		
 	  }
 
+	  .upside-weather{
+		display: inline-block;
+		padding: 30px;
+	  }
+
 	  /*WEATHER BOX EDITING*/
-	  .square2 img {
-		width: 80px;
+	  .fa-thermometer-half{
+		font-size: 50px;
 		transition: all 1s;
-		padding: 10px;
-		
-	}
-	.weather-icon:hover {
+		}
+
+
+	.fa-thermometer-half:hover {
 		transform: scale(1.2);
 	}
 

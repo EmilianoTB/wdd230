@@ -54,3 +54,29 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%';
 }
+
+
+
+/* temperature script */
+
+
+async function getWeather() {
+  const response = await fetch("https://api.openweathermap.org/data/2.5/weather?appid=d1bf7498feb4f8b222047310ce70549e&units=metric&id=3529982");
+  const data = await response.json();
+  return data;
+}
+
+
+async function displayWeather() {
+  const weatherData = await getWeather();
+
+
+  document.getElementById("weather-temp").innerHTML = weatherData.main.temp;
+  document.getElementById("wind-speed").innerHTML = weatherData.main.humidity;
+  document.getElementById("wind-chill").innerHTML = weatherData.wind.speed;
+  document.getElementById("weather-desc").innerHTML = weatherData.weather[0].description;
+
+
+}
+displayWeather()
+

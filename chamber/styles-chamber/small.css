@@ -223,18 +223,28 @@
 			grid-column: 1 / 2;
 			grid-row: 3 / 3;
 			margin: 5px;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
 		  }
 
-		  .square2 img {
-			width: 40%;
+		  .upside-weather{
+			display: inline-block;
+			padding: 30px;
+		  }
+	
+		  /*WEATHER BOX EDITING*/
+		  .fa-thermometer-half{
+			font-size: 50px;
 			transition: all 1s;
-			padding: 20px;
+			}
+	
 			
-		}
-
-		.weather-icon:hover {
+		.fa-thermometer-half:hover {
 			transform: scale(1.2);
 		}
+
+		
 	
 
 

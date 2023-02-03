@@ -199,20 +199,28 @@
 		grid-row: 5 / 5; 
 		margin: 5px;
 		width:600px;
-		
-	
+		text-align: center;
+		align-items: center;
+		justify-content: center;
 	  }
 
-	  .square2 img {
-		width: 20%;
-		transition: all 1s;
-		padding: 20px;
-		
-	}
+	  .upside-weather{
+		display: inline-block;
+		padding: 30px;
+	  }
 
-	.weather-icon:hover {
+	  /*WEATHER BOX EDITING*/
+	  .fa-thermometer-half{
+		font-size: 50px;
+		transition: all 1s;
+		}
+
+		
+	.fa-thermometer-half:hover {
 		transform: scale(1.2);
 	}
+
+	
 
 
 
