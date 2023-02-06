@@ -72,8 +72,8 @@ async function displayWeather() {
 
 
   document.getElementById("weather-temp").innerHTML = weatherData.main.temp;
-  document.getElementById("wind-speed").innerHTML = weatherData.main.humidity;
-  document.getElementById("wind-chill").innerHTML = weatherData.wind.speed;
+  // document.getElementById("wind-chill").innerHTML = weatherData.main.humidity;
+  document.getElementById("wind-speed").innerHTML = weatherData.wind.speed;
   document.getElementById("weather-desc").innerHTML = weatherData.weather[0].description;
 
 
