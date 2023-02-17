@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">}
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+      
+        <img class="lazyload" src="images/city.jpg" >
+        <br>
+
+        <img class="lazyload" data-src="images/clouds.jpg" >
+        <br>
+
+        <img class="lazyload" data-src="images/mon-sea.jpg" >
+        <br>
+
+        <img class="lazyload" data-src="images/sea-a.jpg" >
+        <br>
+
+        <img class="lazyload" data-src="images/sea-b.jpg" >
+        <br>
+     
+        <img class="lazyload" data-src="images/space-a.jpg">
+        <br>
+
+        <img class="lazyload" data-src="images/space.jpg">
+        <br>
+        
+
+        
+      <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+      
+     
+      <script>
+        const lazyLoad = new LazyLoad({
+        elements_selector: ".lazyload"
+      });
+
+      //This code creates a new instance of the LazyLoad library and configures it to lazily load images on a web page.
+    
+      // In this case, it is set to ".lazyload", which means that any element with a class attribute of "lazyload" will be lazily loaded.
+      </script>
+
+
+
+    
+    </body>
+</html>
