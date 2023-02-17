@@ -28,10 +28,9 @@ images.forEach(image => {
 
 // `hidePlaceholder` function 
 // is called when an image has finished loading. 
-// onload' event is triggered when an image has finished loading.
 function hidePlaceholder(event) {
-    var img = event.target;
-    var parent = img.parentNode;
-    var placeholder = parent.querySelector('.placeholder-text');
-    placeholder.style.display = 'none';
+  const img = event.target;
+  const placeholder = img.previousElementSibling;
+  placeholder.style.display = "none"; // Set the display property of the placeholder text to "none"
+  img.style.opacity = "1"; // Set the opacity of the image to 1
 }

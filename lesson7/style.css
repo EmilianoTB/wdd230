@@ -24,3 +24,12 @@
     text-align: center;
     line-height: 200px;
   }
+
+  .image-container img {
+    opacity: 0;
+    transition: opacity 0.5s ease-out; /* Add a 0.5s transition to the opacity property */
+  }
+  
+  .image-container p {
+    opacity: 1;
+  }
