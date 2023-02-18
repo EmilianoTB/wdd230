@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,55 +12,49 @@
     <body>  
         <h1>Lazy Loading Images</h1>
         
-        <picture>
-            <div class="image-container" style="background-color: #F2F2F2;">
-                <p class="placeholder-text">placeholder</p>
-                <img class="lazyload"  data-src="../lazy_n_progressive/images/city.jpg" onload="hidePlaceholder(event)"> <!--The onload attribute in HTML is used to execute a JavaScript function when an image or other resource has finished loading. -->
-            </div>
-        </picture>
-
-        <picture>
-            <div class="image-container" style="background-color: #F2F2F2;">
-                <p class="placeholder-text">placeholder</p>
-                <img class="lazyload"  data-src="../lazy_n_progressive/images/clouds.jpg" onload="hidePlaceholder(event)">
-            </div>
-        </picture>
-
-        <picture>
-            <div class="image-container" style="background-color: #F2F2F2;">
-                <p class="placeholder-text">placeholder</p>
-                <img class="lazyload"  data-src="../lazy_n_progressive/images/mon-sea.jpg" onload="hidePlaceholder(event)">
-            </div>
-        </picture>
         
-        <picture>
-            <div class="image-container" style="background-color: #F2F2F2;">
-                <p class="placeholder-text">placeholder</p>
-                <img class="lazyload"  data-src="../lazy_n_progressive/images/sea-a.jpg" onload="hidePlaceholder(event)">
-            </div>
-        </picture>
-
-        <picture>
-            <div class="image-container" style="background-color: #F2F2F2;">
-                <p class="placeholder-text">placeholder</p>
-                <img class="lazyload"  data-src="../lazy_n_progressive/images/sea-b.jpg" onload="hidePlaceholder(event)">
-            </div>
-        </picture>
-
-        <picture>
-            <div class="image-container" style="background-color: #F2F2F2;">
-                <p class="placeholder-text">placeholder</p>
-                <img class="lazyload"  data-src="../lazy_n_progressive/images/space-a.jpg" onload="hidePlaceholder(event)">
-            </div>
-        </picture>
-
-        <picture>
-            <div class="image-container" style="background-color: #F2F2F2;">
-                <p class="placeholder-text">placeholder</p>
-                <img class="lazyload"  data-src="../lazy_n_progressive/images/space.jpg" onload="hidePlaceholder(event)">
-            </div>
-        </picture>
+            <picture>
+                <img class="lazyload" src="placeholder.png" data-src="../lazy_n_progressive/images/city.jpg" alt="image of a bright city" onload="hidePlaceholder(event)"> <!--The onload attribute in HTML is used to execute a JavaScript function when an image or other resource has finished loading. -->
+            </picture>
         
+
+      
+            <picture>
+                <img class="lazyload" src="placeholder.png" data-src="../lazy_n_progressive/images/clouds.jpg" alt="image of clouds" onload="hidePlaceholder(event)">
+            </picture>
+     
+
+            <picture>
+                <img class="lazyload" src="placeholder.png" data-src="../lazy_n_progressive/images/mon-sea.jpg" alt="image of mountains with a big lake" onload="hidePlaceholder(event)">
+            </picture>
+       
+        
+      
+            <picture>
+                <img class="lazyload" src="placeholder.png" data-src="../lazy_n_progressive/images/sea-a.jpg" alt="image of a brave sea" onload="hidePlaceholder(event)">
+            </picture>
+  
+
+   
+            <picture>
+                <img class="lazyload" src="placeholder.png" data-src="../lazy_n_progressive/images/sea-b.jpg" alt="image of a calm sea" onload="hidePlaceholder(event)">
+            </picture>
+       
+
+    
+            <picture>
+                <img class="lazyload" src="placeholder.png" data-src="../lazy_n_progressive/images/space-a.jpg" alt="image of a sky full of stars" onload="hidePlaceholder(event)">
+            </picture>
+   
+
+            <picture>
+                <img class="lazyload" src="placeholder.png" data-src="../lazy_n_progressive/images/space.jpg" alt="image of stars and clouds" onload="hidePlaceholder(event)">
+            </picture>
+     
+           
+            
+      
+      
 
         
         <script src="script.js"></script>

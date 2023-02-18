@@ -522,3 +522,17 @@
 }
 
 
+/*Discover images*/
+
+.image-container{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.discover-img{
+	width:800px;
+	height:400px;
+}

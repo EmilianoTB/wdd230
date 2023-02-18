@@ -29,8 +29,11 @@ images.forEach(image => {
 // `hidePlaceholder` function 
 // is called when an image has finished loading. 
 function hidePlaceholder(event) {
-  const img = event.target;
-  const placeholder = img.previousElementSibling;
-  placeholder.style.display = "none"; // Set the display property of the placeholder text to "none"
-  img.style.opacity = "1"; // Set the opacity of the image to 1
+    const img = event.target;
+    const placeholder = img.previousElementSibling;
+    if (placeholder && placeholder.tagName === "img") {
+        placeholder.style.display = "none";
+    }
+
+    img.style.opacity = "1";
 }

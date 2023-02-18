@@ -1,9 +1,13 @@
+h1 {
+  text-align: center;
+  } 
 
-.image-container {
+picture {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
+    
   }
   
   .lazyload {
