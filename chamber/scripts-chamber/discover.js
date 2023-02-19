@@ -39,20 +39,19 @@ function hidePlaceholder(event) {
 }
 
 
-// get the last visit date from local storage
-let lastVisit = localStorage.getItem('lastVisit');
+// initialize display elements
+const visitsDisplay = document.querySelector("#timeSinceLastVisit");
 
-// if there is no previous visit date, set it to the current time
-if (!lastVisit) {
-  lastVisit = Date.now();
-  localStorage.setItem('lastVisit', lastVisit);
-} else { /*calculate the time difference in days
-     display the time difference in days on the page
-     update the last visit date in local storage to the current time */
-  const timeDiffMs = Date.now() - lastVisit;
-  const timeDiffDays = Math.round(timeDiffMs / (1000 * 60 * 60 * 24));
+let numVisits = Number(window.localStorage.getItem("visits-ls")); 
 
-  
-  document.getElementById('timeSinceLastVisit').innerHTML = `${timeDiffDays} days`;
-  localStorage.setItem('lastVisit', Date.now());
-} 
+// determine if this is the first visit or display the number of visits.
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit!`;
+}
+
+
+numVisits++;
+localStorage.setItem("visits-ls", numVisits);
+todayDisplay.textContent = Date.now();
