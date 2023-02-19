@@ -131,7 +131,7 @@
 		background-color:#246b3c;
 		color: white;
 		text-align: center;
-		margin-top: -80px;
+		margin-top: -50px;
 		margin-left: 10px;
 		margin-right: 10px;
 		padding: 10px 0px 10px 0px;
@@ -514,7 +514,7 @@
 	
 	
 	p{
-		font-size:20px !important;
+		font-size:15px !important;
 	}
 
 
@@ -530,9 +530,6 @@
     align-items: center;
 	text-align: center;
     margin: 70px 0;
-	
-	
-	
 }
 
 .info-container{
