@@ -82,6 +82,11 @@ body {
     height: 200px;
   }
 
+  .table-comment{
+    text-align: center;
+   
+  }
+
   .fa-check{
     color: #635994;
   }
