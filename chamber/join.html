@@ -52,73 +52,130 @@
         </div>
 
         
-        <main>
+        <main class="form-benefits">
+
             <div class="join-box">
                 <img src="images/commerce.jpg" alt="">
-                <h1 class="join-text" style="text-align:center;">JOIN NOW!</h1>
             </div>
-            
-            <form action="thankyou.html" method="get">
-                <label for="first-name">Name</label>
-                <input type="text" id="first-name" name="first-name" required>
-                <br>
-              
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" required>
-                <br>
-              
-                <label for="business-position">Business Position Title</label>
-                <input type="text" id="business-position" name="business-position" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 characters of letters, hyphens, and spaces." >
-                <br>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="e.g. example@domain.com" required>
-                <br>
+            <div class="form_box">
+                <h1 class="join-text" style="text-align:center;">JOIN NOW!</h1>
+                <form action="thankyou.html" method="get">
+                    <label for="first-name">Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <br>
+                
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    <br>
+                
+                    <label for="business-position">Business Position Title</label>
+                    <input type="text" id="business-position" name="business-position" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 characters of letters, hyphens, and spaces." >
+                    <br>
 
-                <label for="cell-phone">Cell Phone</label>
-                <input type="tel" id="cell-phone" name="cell-phone" required>
-                <br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. example@domain.com" required>
+                    <br>
 
-                <label for="business-name">Business Name</label>
-                <input type="text" id="business-name" name="business-name" required>
-                <br>
+                    <label for="cell-phone">Cell Phone</label>
+                    <input type="tel" id="cell-phone" name="cell-phone" required>
+                    <br>
 
-                <div class="memebership-box">
-                    <label for="membership-level">Membership Level</label>
-                    <select id="membership-level" name="membership-level">
-                    <option value="NP_Membership">NP Membership</option>
-                    <option value="Bronze_Membership">Bronze Membership</option>
-                    <option value="Silver_Membership">Silver Membership</option>
-                    <option value="Gold_Membership">Gold Membership</option>
-                    </select>
-                    <div class="membership-info">
-                        <div class="np-membership" id="np">
-                            <p>NP Membership</p>
+                    <label for="business-name">Business Name</label>
+                    <input type="text" id="business-name" name="business-name" required>
+                    <br>
+
+                    <div class="memebership-box">
+                        <label for="membership-level">Membership Level</label>
+                        <select id="membership-level" name="membership-level">
+                        <option value="NP_Membership">NP Membership</option>
+                        <option value="Bronze_Membership">Bronze Membership</option>
+                        <option value="Silver_Membership">Silver Membership</option>
+                        <option value="Gold_Membership">Gold Membership</option>
+                        </select>
+                        <div class="membership-info">
+                            <div class="np-membership" id="np">
+                                <p>NP Membership</p>
+                            </div>
+                            <div class="bronze-membership" id="bm">
+                                <p>Bronze Membership</p>
+                            </div>
+                            <div class="silver-membership" id="sm">
+                                <p>Silver Membership</p>
+                            </div>
+                            <div class="gold-membership" id="gm">
+                                <p>Gold Membership</p>
+                            </div>
                         </div>
-                        <div class="bronze-membership" id="bm">
-                            <p>Bronze Membership</p>
+                        
+                        <p>*This memberships have increasing costs as well as increased benefits
+                            per level like trainings, advertising (like on the home page spotlights), 
+                            event discounts, etc.</p>
+                    </div>
+                    <br>
+
+                    <label for="business-description">Business Description</label>
+                    <textarea id="business-description" name="business-description"></textarea>
+                    <br>
+                
+                    <input type="hidden" id="form-load-time" name="form-load-time" value="">
+                    <br>
+                
+                    <input type="submit" value="Submit" ><a href="thankyou.html"></a>
+                </form>
+            </div>
+
+            <div class="member_box">
+                <h1>Membership Benefits</h1>
+                    <div class="info-m">
+                        <div class="member-box">
+                            <h3 class="np-info">NP Membership</h3>
+                            <h4>For non-profit organizations, no fee</h4>
+                            <ul>
+                                <li>-Includes access to grant and funding opportunities.</li>
+                                <li>-Provides opportunities to participate in advocacy efforts.</li>
+                                <li>-Invitations to exclusive events for non-profit organizations.</li>
+                                <li>-Access to a directory of other non-profit organizations in your field.</li>
+                            </ul>
                         </div>
-                        <div class="silver-membership" id="sm">
-                            <p>Silver Membership</p>
+
+                        <div class="member-box">
+                            <h3 class="bronze-info">Bronze Membership</h3>
+                            <h4>$50/year</h4>
+                            <ul>
+                                <li>-Includes access to training materials.</li>
+                                <li>-Discounts on products and services from partner companies.</li>
+                                <li>-Provides access to webinars and workshops on industry trends and best practices.</li>
+                                <li>-Opportunities to participate in online forums and discussions with other members.</li>
+                                <li>-Invitation to exclusive events for Bronze members only.</li>
+                            </ul>
                         </div>
-                        <div class="gold-membership" id="gm">
-                            <p>Gold Membership</p>
+
+                        <div class="member-box">
+                            <h3 class="silver-info">Silver Membership</h3>
+                            <h4>$100/year</h4>
+                            <ul>
+                                <li>-Includes advertising on the home page spotlights.</li>
+                                <li>-Discounts on event sponsorships and booth rentals.</li>
+                                <li>-Opportunities to contribute articles or blog posts to the organization's website or newsletter.</li>
+                                <li>-Provides access to an online member directory for networking and partnership opportunities.</li>
+                                <li>-Invitation to exclusive events for Silver members only.</li>
+                            </ul>
+                        </div>
+
+                        <div class="member-box">
+                            <h3 class="gold-info">Gold Membership</h3>
+                            <h4>$200/year</h4>
+                            <ul>
+                                <li>-Includes event discounts and a dedicated account manager.</li>
+                                <li>-Provides access to market research reports and industry data.</li>
+                                <li>-Priority access to speaking opportunities at events or conferences hosted by the organization.</li>
+                                <li>-Opportunities to participate in focus groups or committees that shape the direction of the organization.</li>
+                                <li>-Invitation to exclusive events for Gold members only.</li>
+                            </ul>
                         </div>
                     </div>
-                    
-                    <p>*This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
-                </div>
-                <br>
-
-                <label for="business-description">Business Description</label>
-                <textarea id="business-description" name="business-description"></textarea>
-                <br>
-              
-                <input type="hidden" id="form-load-time" name="form-load-time" value="">
-                <br>
-              
-                <input type="submit" value="Submit" href="thankyou.html">
-              </form>
+            </div>
 
 
         </main>

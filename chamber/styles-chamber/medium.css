@@ -563,5 +563,30 @@
 		
 	}
 
+	/* form style*/
+
+
+	.member_box {
+		text-align: center;
+		justify-content: center;
+		margin-left: -50px;
+	  }
+	
+	  .info-m{
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2em;
+		align-items: center;
+		text-align: center;
+		width: 400px;
+	  }
+
+	  
+	  
+	  .member_box {
+		padding: 0px 0px 0px 100px;
+	  }
+
 
 }
