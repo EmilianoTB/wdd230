@@ -724,3 +724,13 @@ option[selected] {
 	background: linear-gradient(#C89C3E, #EBD57F);
 	
   }
+
+
+ /* thank you css*/
+
+ .thanks-box{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height:700px;
+ }
