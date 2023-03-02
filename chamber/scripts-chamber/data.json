@@ -1,0 +1,67 @@
+{
+    "sections": [
+      {
+        "imgSrc": "images/Cinemex-Logo.webp",
+        "imgAlt": "cinemex movie theater",
+        "company": "Cinemex",
+        "address": "Camino Real Tetelcingo, Ex Hda Calderón 23, Cuautla, Mor.",
+        "link": "https://cinemex.com/"
+      },
+      {
+        "imgSrc": "images/logo_autocexico-new2.webp",
+        "imgAlt": "Autocares bus company",
+        "company": "Autocares",
+        "address": "Carr. México-Cuautla 1355, Miguel Hidalgo, 62748 Cuautla, Mor.",
+        "link": "http://autocaresdemexico.com.mx/"
+      },
+      {
+        "imgSrc": "images/cinepolis-logo.webp",
+        "imgAlt": "cinepolis movie theater",
+        "company": "Cinepolis",
+        "address": "Ant. México - Cuautla 6, Empleado Postal, 62748 Cuautla, Mor.",
+        "link": "https://cinepolis.com/"
+      },
+      {
+        "imgSrc": "images/logo_esperanza.webp",
+        "imgAlt": "Esperanza bakery",
+        "company": "Esperanza",
+        "address": "Av Reforma 764, Manantiales, 62746 Cuautla, Mor.",
+        "link": "https://www.esperanza.mx/"
+      },
+      {
+        "imgSrc": "images/cibeles_logo-new.png",
+        "imgAlt": "Cibeles bakery",
+        "company": "Cibeles",
+        "address": "José G. Parres 3, Centro, 62219 Cuautla, Mor.",
+        "link": "https://es-la.facebook.com/cibelescuautla/"
+      },
+      {
+        "imgSrc": "images/ter_logo-new.png",
+        "imgAlt": "Bus travels",
+        "company": "Estrella Roja",
+        "address": "Ing. Mongoy 10, Centro, 62740 Cuautla, Mor.",
+        "link": "https://www.estrellaroja.com.mx/"
+      },
+      {
+        "imgSrc": "images/elglobo_logo.webp",
+        "imgAlt": "El Globo bakery",
+        "company": "El Globo",
+        "address": "Av Reforma 46, Miguel Hidalgo, 62748 Cuautla, Mor.",
+        "link": "https://www.elglobo.com.mx/"
+      },
+      {
+        "imgSrc": "images/logo-boing-1.webp",
+        "imgAlt": "Beverage brand",
+        "company": "Boing",
+        "address": "Nicolas Bravo 3, 62715 Morelos, Mor.",
+        "link": "https://www.pascual.com.mx/"
+      },
+      {
+        "imgSrc": "images/comer_logo.webp",
+        "imgAlt": "Convenience store",
+        "company": "La Comer",
+        "address": "Ant. México - Cuautla 4, Miguel Hidalgo, 62748 Cuautla, Mor",
+        "link": "https://www.lacomer.com.mx/"
+      }
+    ]
+  }
