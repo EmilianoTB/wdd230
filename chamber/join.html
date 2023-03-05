@@ -61,68 +61,66 @@
             <div class="form_box">
                 <h1 class="join-text" style="text-align:center;">JOIN NOW!</h1>
                 <form action="thankyou.html" method="get">
-                    <label for="first-name">Name</label>
-                    <input type="text" id="first-name" name="first-name" required autofocus>
-                    <br>
-                
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                    <br>
-                
-                    <label for="business-position">Business Position Title</label>
-                    <input type="text" id="business-position" name="business-position" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 characters of letters, hyphens, and spaces." >
-                    <br>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="e.g. example@domain.com" required>
-                    <br>
-
-                    <label for="cell-phone">Cell Phone</label>
-                    <input type="tel" id="cell-phone" name="cell-phone" required>
-                    <br>
-
-                    <label for="business-name">Business Name</label>
-                    <input type="text" id="business-name" name="business-name" required>
-                    <br>
-
-                    <div class="memebership-box">
+                    <fieldset>
+                      <legend>Name</legend>
+                      <label for="first-name">First Name</label>
+                      <input type="text" id="first-name" name="first-name" required autofocus>
+                      <br>
+                      <label for="last-name">Last Name</label>
+                      <input type="text" id="last-name" name="last-name" required>
+                      <br>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Email and Phone</legend>
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="e.g. example@domain.com" required>
+                      <br>
+                      <label for="cell-phone">Cell Phone</label>
+                      <input type="tel" id="cell-phone" name="cell-phone" required>
+                      <br>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Business Information</legend>
+                      <label for="business-name">Business Name</label>
+                      <input type="text" id="business-name" name="business-name" required>
+                      <br>
+                      <label for="business-position">Business Position Title</label>
+                      <input type="text" id="business-position" name="business-position" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 characters of letters, hyphens, and spaces." >
+                      <br>
+                      <div class="memebership-box">
                         <label for="membership-level">Membership Level</label>
                         <select id="membership-level" name="membership-level">
-                        <option value="NP_Membership">NP Membership</option>
-                        <option value="Bronze_Membership">Bronze Membership</option>
-                        <option value="Silver_Membership">Silver Membership</option>
-                        <option value="Gold_Membership">Gold Membership</option>
+                          <option value="NP_Membership">NP Membership</option>
+                          <option value="Bronze_Membership">Bronze Membership</option>
+                          <option value="Silver_Membership">Silver Membership</option>
+                          <option value="Gold_Membership">Gold Membership</option>
                         </select>
                         <div class="membership-info">
-                            <div class="np-membership" id="np">
-                                <p>NP Membership</p>
-                            </div>
-                            <div class="bronze-membership" id="bm">
-                                <p>Bronze Membership</p>
-                            </div>
-                            <div class="silver-membership" id="sm">
-                                <p>Silver Membership</p>
-                            </div>
-                            <div class="gold-membership" id="gm">
-                                <p>Gold Membership</p>
-                            </div>
+                          <div class="np-membership" id="np">
+                            <p>NP Membership</p>
+                          </div>
+                          <div class="bronze-membership" id="bm">
+                            <p>Bronze Membership</p>
+                          </div>
+                          <div class="silver-membership" id="sm">
+                            <p>Silver Membership</p>
+                          </div>
+                          <div class="gold-membership" id="gm">
+                            <p>Gold Membership</p>
+                          </div>
                         </div>
-                        
-                        <p>*This memberships have increasing costs as well as increased benefits
-                            per level like trainings, advertising (like on the home page spotlights), 
-                            event discounts, etc.</p>
-                    </div>
-                    <br>
-
-                    <label for="business-description">Business Description</label>
-                    <textarea id="business-description" name="business-description"></textarea>
-                    <br>
-                
-                    <input type="hidden" id="form-load-time" name="form-load-time" value="">
-                    <br>
-                
-                    <input type="submit" value="Submit" ><a href="thankyou.html"></a>
-                </form>
+                        <p>*This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc.</p>
+                      </div>
+                      <br>
+                        <label for="business-description">Business Description</label>
+                        <textarea id="business-description" name="business-description"></textarea>
+                        <br>
+                      </fieldset>
+                      <input type="hidden" id="form-load-time" name="form-load-time" value="">
+                      <br>
+                      <input type="submit" value="Submit" class="input-button">
+                    </fieldset>
+                  </form>
             </div>
 
             <div class="member_box">

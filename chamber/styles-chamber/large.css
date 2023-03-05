@@ -599,7 +599,13 @@ form label, input{
 
 form input{
 	border-radius: 5px;
-	border: 1px solid white;
+	border: 1px solid rgb(255, 255, 255);
+	
+}
+
+.input-button{
+	background-color: #e2ff27;
+	border-radius: 30px;
 }
 
 textarea{
@@ -820,7 +826,7 @@ section a {
 }
 
 .img-business{
-	height: 100%;
+	height: 300px;
 	width: 100%; 
 	object-fit: contain;
 }
