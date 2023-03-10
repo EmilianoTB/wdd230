@@ -69,11 +69,14 @@ h1 {
     }
 
     .weather-box{
-        border: 1px solid black;
+        border: 1px solid rgb(171, 222, 106);
+        border-radius: 10px;
         text-align: center;
         width: 400px;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+        background-color: #6cc1b0;
+        box-shadow: 5px 5px 10px #ccc, -5px -5px 5px #F4EAD5;
 
     }
