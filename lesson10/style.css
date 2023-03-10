@@ -1,0 +1,79 @@
+h1 {
+    text-align: center;
+    } 
+  
+  
+  body {
+    
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    animation: background-change 5s linear infinite;
+    
+  }
+  
+  @keyframes background-change {
+    20% {
+        background-color: #F4EAD5; /* COLOR START */
+    }
+    70% {
+        background-color: #FFFBE9; /* COLOR END */
+    }
+  }
+  
+  #rectangle {
+   
+      background-color: #D7E9B9;
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      border-radius: 2%;
+      box-shadow: 5px 5px 5px #ccc, -5px -5px 5px #F4EAD5;
+     
+      
+     
+      
+    }
+  
+    #rectangle h1 {
+      color: #1C6758;
+      font-size: 24px;
+      font-weight: bold;
+     
+    }
+  
+  
+    .rectangle_footer {
+      width: 100%;
+     
+      background-color: #D7E9B9; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      border-radius: 2%;
+      text-align: center; 
+      box-shadow: 5px 5px 5px #ccc, -5px -5px 5px #F4EAD5;
+    }
+  
+    footer p{
+      color: #1C6758;  /* Controls color of the text inside the footer */
+      text-align: center;
+      font-size: 1em;
+  
+    }
+  
+    main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .weather-box{
+        border: 1px solid black;
+        text-align: center;
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
