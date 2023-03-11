@@ -75,7 +75,12 @@ async function displayWeather() {
   // document.getElementById("wind-chill").innerHTML = weatherData.main.humidity;
   document.getElementById("wind-speed").innerHTML = weatherData.wind.speed;
   document.getElementById("weather-desc").innerHTML = weatherData.weather[0].description;
-
+  // weather icon added
+  const weatherIcon = document.querySelector('#weather-icon');
+  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+	const desc = weatherData.weather[0].description.charAt(0).toUpperCase() + weatherData.weather[0].description.slice(1);
+	weatherIcon.setAttribute('src', iconsrc);
+	weatherIcon.setAttribute('alt', desc);
 
 }
 displayWeather()

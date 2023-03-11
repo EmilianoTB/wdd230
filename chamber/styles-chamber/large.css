@@ -317,13 +317,15 @@
 	  }
 
 	  /*WEATHER BOX EDITING*/
-	  .fa-thermometer-half{
-		font-size: 50px;
+	  #weather-icon{
+		width: 50px;
+		height: 50px;
+		margin-bottom: -20px;
 		transition: all 1s;
 		}
 
 
-	.fa-thermometer-half:hover {
+		#weather-icon:hover {
 		transform: scale(1.2);
 	}
 
