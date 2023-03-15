@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bree+Serif&family=Playfair+Display:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Playfair+Display:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@media(max-width: 799px) {
+@media(max-width: 800px) {
 
 	* {
 		box-sizing: border-box;
@@ -685,11 +685,22 @@
 
 	  .grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+		grid-template-columns: 100%;
 		align-items: center;
 	}
 
 
 	
+
+}
+
+
+@media screen and (max-width: 440px) {
+    section > a{
+        display: none;
+    }
+
+	
+
 
 }
