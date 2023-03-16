@@ -22,7 +22,7 @@
     <body>
         <header>
             <div class="logo_header">
-                <img src="images/cuautla-logo-header.webp" alt="Logo image cuautla chamber of commerce">
+                <img src="images/cuautla-logo-header.webp" alt="Logo image cuautla chamber of commerce" loading="lazy">
             </div>
             
             <nav>
@@ -50,34 +50,50 @@
         <div class="date">
             <span class="paragraph-text" id="get_date"></span>
         </div>
-
         
-        <main>
-
-
-            <div class="grid-container">
-                <div class="square1">
-                    <p class="paragraph-text">
-                        <h2>Riboon Cutting</h2>
-                        <br>
-                        <p class="paragraph-text">The diamond shack</p>
-                        <br>
-                        <p class="paragraph-text">Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.<a href="">more info ...</a></p>
-                    
-                </div>
-                <div class="square2"><div class="weather-box"><h2>Weather</h2><img src="#" alt="#" id="weather-icon"><div class="upside-weather"><p><span id="weather-temp"></span>°C</p></div><p><span id="weather-desc"></span></p><hr><p>Wind Speed: <span id="wind-speed"></span> km/h</p><p>Wind Chill: <span id="wind-chill"></span></p></div></div>
-                <div class="square3"><button class="join-button">Join</button><p class="paragraph-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, consequatur repellat. Harum atque ad quae.</p></div>
-                <div class="square4">   
-                    <button class="hero-button">Hero with site name and call to action</button>
-                </div>
-                <div class="rectangle1"><div class="text-new-release"><h2>News Release</h2><p class="paragraph-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, assumenda commodi quod quasi nisi, earum itaque repudiandae voluptates porro delectus fugit, ab mollitia nobis! Tempore voluptas quo quibusdam et sit?</p></div></div>
-            
-                <div class="rectangle2">
-                    <div class="box-1"><h2>Autocares</h2><img class="car-icon" src="images/autobus.png" alt="image of a car"><br><p class="paragraph-text">"Efficient and reliable transportation solutions for your business needs"</p><hr><p class="paragraph-text">📧autocares@gmail.com</p><p class="paragraph-text">📞+999-9999-9999</p><p class="paragraph-text">🌐website</p></div>
-                    <div class="box-2"><h2>El Globo</h2><img class="colors-icon" src="images/globo-aerostatico.png" alt="image of a car"> <br><p class="paragraph-text">"Freshly baked bread, every day, delivered straight to your door"</p><hr><p class="paragraph-text">📧elglobo@comercio.com</p><p class="paragraph-text">📞+999-9999-9999</p><p class="paragraph-text">🌐website</p></div>
-                    <div class="box-3"><h2>Cinepolis</h2><img class="house-icon" src="images/cine.png" alt="image of a car"><br><p class="paragraph-text">"Movies that bring stories to life"</p><hr><p class="paragraph-text">📧cinepolis@cine.com</p><p class="paragraph-text">📞+999-9999-9999</p><p class="paragraph-text">🌐website</p></div>
-                </div>
+        <div class="image-box">
+            <img src="images/contact-us_image.jpg" alt="Example Image">
+            <div class="text-inside">
+              <p class="image-text">CONTACT US</p>
             </div>
+        </div>
+        
+        <main class="form-benefits">
+
+            <div class="form_box_contact">
+                    <form action="thankyou.html" method="get">
+                        <h1 class="join-text" style="text-align:center;">Contact Form</h1>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                      
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                      
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                      
+                        <br>
+                        <div class="submit-button">
+                            <input type="submit" value="Submit" class="input-button">
+                        </div>
+                  </form>
+                  
+            </div>
+
+            <div class="member_box">
+                <h1>Contact Us</h1>
+                <br>
+                    <h3>📍Address</h3>
+                    <p>Matamoros 1, Centro, 62740 Cuautla, Mor.</p>
+                    <br>
+                    <h3>📞Phone</h3>
+                    <p>+52-735-123-45-56</p>
+                    <br>
+                    <h3>📧Email</h3>
+                    <p>cuautlachamber@hotmail.com</p>
+                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702.2388669331359!2d-98.95469349443808!3d18.81259922836465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce6f1182ba4b05%3A0x1152f2bca6fa6083!2zWsOzY2Fsbw!5e0!3m2!1ses!2smx!4v1678998768675!5m2!1ses!2smx" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
 
         </main>
 
@@ -109,6 +125,3 @@
         <script src="scripts-chamber/windchill.js" async defer></script>
     </body>
 </html>
-
-
-

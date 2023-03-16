@@ -228,6 +228,18 @@
 			justify-content: center;
 		  }
 
+		  .weather-box h2, 
+		  .weather-box p{
+			padding: 17px;
+			font-size: 20px;
+
+		  }
+
+		  .weather-box img{
+			width: 100px;
+			margin-bottom: -40px;
+		  }
+
 		  .upside-weather{
 			display: inline-block;
 			padding: 30px;
@@ -276,10 +288,10 @@
 			grid-column: 1 / 2;
 			grid-row: 1 / 1;
 			margin: 5px;
-			/* background-image: url("../images/cuautla_background_zocalo.jpg");
+			background-image: url("../images/cuautla_background_zocalo.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-position: center; */
+			background-position: center;
 			position: relative;
 			
 			
@@ -355,7 +367,7 @@
 		  .box-1{
 			
 			border: 1px solid rgb(185, 183, 47);
-			padding: 5px;
+			padding: 2px;
 			margin: 5px;
 			grid-column: 1 / 1;
 			grid-row: 1 / 1; 
