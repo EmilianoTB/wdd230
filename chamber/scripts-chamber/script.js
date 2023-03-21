@@ -72,15 +72,30 @@ async function displayWeather() {
 
 
   document.getElementById("weather-temp").innerHTML = weatherData.main.temp;
-  // document.getElementById("wind-chill").innerHTML = weatherData.main.humidity;
   document.getElementById("wind-speed").innerHTML = weatherData.wind.speed;
   document.getElementById("weather-desc").innerHTML = weatherData.weather[0].description;
+  
+
+
+
+
   // weather icon added
   const weatherIcon = document.querySelector('#weather-icon');
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
 	const desc = weatherData.weather[0].description.charAt(0).toUpperCase() + weatherData.weather[0].description.slice(1);
 	weatherIcon.setAttribute('src', iconsrc);
 	weatherIcon.setAttribute('alt', desc);
+
+
+  const temperature = weatherData.main.temp; 
+  const speed = weatherData.wind.speed;
+  
+  if (temperature <= 50 && speed > 3.0 ) {
+
+    document.getElementById("wind-chill").innerHTML = (35.74 + 0.6215 * temperature - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temperature * Math.pow(speed, 0.16));
+  } else {
+    document.getElementById("wind-chill").innerHTML = ("N/A");
+  }
 
 }
 displayWeather()

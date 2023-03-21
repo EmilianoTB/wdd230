@@ -350,7 +350,8 @@
 	  
 	  .join-button{
 		display: inline-block;
-		margin: 20px;
+		margin-top: -10px;
+		margin-bottom: 10px;
 		background-color: #c8b102;
 		border: 1px solid #ffffff;
 		border-radius: 4px;
