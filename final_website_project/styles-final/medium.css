@@ -1,6 +1,7 @@
 @media (min-width: 800px) and (max-width: 1200px) {
     body {
         overflow-x: hidden;
+        height: 2000px;
       }
       .nav-list {
         position: absolute;
@@ -24,7 +25,181 @@
         display: block;
       }
 
+      .container {
+        grid-template-columns: 1fr 1fr;
+        
+      }
+
+      .container2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+
+      .square3 {
+        display: none;
+      }
+      
+      .container3{
+        display: grid;
+        padding-top: 20px;
+        height: 300px;
+      }
+    
+
+
+      #box-social-media{
+        display: none;
+      }
+      
+      .container-links {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+
+      #links{
+        display: none;
+      }
+
+      p{
+        font-size: 15px;
+      }
+
+      h1{
+        font-size: 25px;
+      }
+
+      h2{
+        font-size: 20px;
+      }
+
+      .image-box{
+        position: relative;
+        padding-top: 10px;
+        
+      }
+    
+      .text-inside{
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        
+      }
+      
+      .image-text{
+        font-size: 70px !important;
+        text-align: center;
+        color: white;
+      }
+
+      .image-box{
+        background-image: url("../images-final/orangesss.jpg");
+        background-size: cover; /* para cubrir todo el fondo */
+        background-position: center; /* para centrar la imagen */
+        height: 200px;
+        width: 100%;
+      }
+
+      .juice-img{
+        display:none;
+      }
+
+      
+    .big-container-2{
+      display: grid;
+      grid-template-columns: 1fr;
+      
+    }
+
+    .fresh-body{
+      height: 2400px;
+    }
+
+    form{
+      width: auto;
+      padding: 50px;
+      margin: auto;
+      width: 70%;
+      font-size: 20px;
+    }
+
+    form input{
+      width: 100%;
+      height: 30px;
+    }
+  
+    form label, input{
+      margin: 10px 0;
+    }
+  
+    form input{
+      border-radius: 5px;
+      border: 1px solid white;
+    }
+
+    form select{
+      border-radius: 5px;
+      border: 1px solid white;
+      height: 50px;
+    }
+  
+    textarea{
+      width: 100%;
+      height: 50px;
      
+    } 
+
+    #output-area h2{
+      font-size: 25px;
+    }
+
+
+    #output-area p{
+      font-family: 'Lato', sans-serif;
+    }
+
+    #output-area p{
+      padding: 15px;
+      font-size: 20px;
+    }
+
+    #output-area ul{
+      padding: 15px;
+    }
+
+    #output-area li{
+      padding: 5px;
+      font-family: 'Lato', sans-serif;
+    }
+
+
+    /*about page*/
+
+    .juice-story{
+      padding: 40px;
+    }
+
+    .about-container{
+      padding: 10px;
+    }
+
+
+    .left-about{
+      margin: 50px 100px 200px 50px;
+      
+    }
+
+    iframe{
+      width: 70%;
+      height: 400px;
+    }
+
+    .about-body{
+      height: 2900px;
+   }
+    
 }
-    
-    

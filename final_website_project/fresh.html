@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--california-bountiful-foods.com-->
+       
+        <title class="sample-siteheader">Bountiful Foods</title>
+        <meta name="description" content="he purpose of the website for Bountiful Foods is to provide information about their small
+        business specializing in organic, locally grown foods.">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="styles-final/large.css">
+        <link rel="stylesheet" href="styles-final/medium.css">
+        <link rel="stylesheet" href="styles-final/small.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        
+
+
+    </head>
+    <body class="fresh-body">
+        <header>
+            <nav>
+                <a class="logo" href="/">Bountiful Foods</a>
+                <div class="mobile-menu">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="fresh.html">Fresh</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                </ul>
+              </nav>
+        </header>
+       
+        <main>
+        
+            <div class="image-box">
+              <img src="images-final/juiceeee.jpg" alt="Example Image" class="juice-img">
+              <div class="text-inside">
+                <p class="image-text">DO YOUR DRINK</p>
+              </div>
+          </div>
+
+          <div class="big-container-2">
+            <form id="order-form">
+              <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                  <label for="first-name">First name:</label>
+                  <input type="text" id="first-name" name="fname" required>
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                  <label for="phone">Phone number:</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+              </fieldset>
+
+
+              <fieldset>
+                <legend>Fruit Selection</legend>
+                <div>
+                  <label for="fruit1">Select fruit 1:</label>
+                  <select id="fruit1" name="fruit1" required>
+                    <option value="" disabled selected>Select an option</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="fruit2">Select fruit 2:</label>
+                  <select id="fruit2" name="fruit2" required>
+                    <option value="" disabled selected>Select an option</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="fruit3">Select fruit 3:</label>
+                  <select id="fruit3" name="fruit3" required>
+                    <option value="" disabled selected>Select an option</option>
+                  </select>
+                </div>
+              </fieldset>
+
+
+              <fieldset>
+                <legend>Special Instructions</legend>
+                <div>
+                  <label for="instructions">Please enter any special instructions:</label>
+                  <textarea id="instructions" name="instructions"></textarea>
+                </div>
+              </fieldset>
+              <div class="button-box">
+                <button class="juice-button" type="submit">Submit</button>
+              </div>
+            </form>
+            
+            <div id="output-area">
+              <img src="images-final/sand-clock.png" alt="sand clock">
+              <br>
+              <h2 style="text-align: center;">CREATING A NEW JUICE...</h2>
+            </div>
+
+        </div>
+        </main>
+        <footer>
+          <hr>
+
+          <div class="container-links">
+            <div class="box-link" id="links">
+              <h2>Links</h2>
+              <ul>
+                <li><a href="index.html">>Home</a></li>
+                <li><a href="fresh.html">>Fresh</a></li>
+                <li><a href="about.html">>About Us</a></li>
+              </ul>
+            </div>
+            <div class="box-link">
+              <h2>Contact Us</h2>
+              <ul>
+                <li><a href="index.html">>+52 735 199 19 86</a></li>
+                <li><a href="fresh.html">>Emilianotorres28@hotmail.com</a></li>
+                <li><a href="about.html">>CA. Los Angeles</a></li>
+              </ul>
+            </div>
+            <div class="box-link">
+              <h2>Social Media</h2>
+              <ul>
+                <li><a href="/">>Facebook</a></li>
+                <li><a href="/">>Instagram</a></li>
+                <li><a href="/">>Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+            <hr>
+            <p class="footer-navigation">© Bountiful Foods <span id="currentYear"></span> | <b>Emiliano B. Torres</b> | WDD 230 Final Project | Mexico Last Updated:<span id="lastModified"></span></p>
+        </footer>
+        
+        <script src="scripts/script.js" async defer></script>
+        <script src="scripts/freshform.js" async defer></script>
+        <script src="scripts/form-submit.js" async defer></script>
+
+        
+    </body>
+</html>
+
+
+

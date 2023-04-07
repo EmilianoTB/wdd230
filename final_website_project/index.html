@@ -29,6 +29,7 @@
                   <div class="line3"></div>
                 </div>
                 <ul class="nav-list">
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="fresh.html">Fresh</a></li>
                   <li><a href="about.html">About Us</a></li>
                 </ul>
@@ -107,7 +108,32 @@
                 <a href="/" style="color: white;"><i class="fab fa-instagram"></i></a>
               </span>
             </div>
-            <div class="square2">Weather Card</div>
+            <div class="square2">
+              <div class="weather-card">
+                <div class="current-conditions">
+                  <h2>Current Conditions</h2>
+                  <p class="temperature"></p>
+                  <p class="condition"></p>
+                  <p class="humidity"></p>
+                </div>
+                <div class="forecast">
+                  <h2>Three Day Forecast</h2>
+                  <div class="day1">
+                    <p class="date"></p>
+                    <p class="temperature"></p>
+                  </div>
+                  <div class="day2">
+                    <p class="date"></p>
+                    <p class="temperature"></p>
+                  </div>
+                  <div class="day3">
+                    <p class="date"></p>
+                    <p class="temperature"></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
             <div class="square3">
               <span class="icon_facebook">
                 <a href="/" style="color: white;"><i class="fab fa-facebook"></i></a>
@@ -115,19 +141,53 @@
             </div>
           </div>
 
-          <div class="container">
-            <div class="column-big">The total number of speciality drinks that the current user has submitted from the fresh page form</div>
+          <div class="container3">
+                <h2>Specialty Drinks Submitted:</h2>
+                <img src="images-final/fruitssssss.png" alt="">
+                <p id="juice-count">0</p>
           </div>
 
         </main>
 
         <footer>
+          <hr>
+
+          <div class="container-links">
+            <div class="box-link" id="links">
+              <h2>Links</h2>
+              <ul>
+                <li><a href="index.html">>Home</a></li>
+                <li><a href="fresh.html">>Fresh</a></li>
+                <li><a href="about.html">>About Us</a></li>
+              </ul>
+            </div>
+            <div class="box-link">
+              <h2>Contact Us</h2>
+              <ul>
+                <li><a href="index.html">>+52 735 199 19 86</a></li>
+                <li><a href="fresh.html">>Emilianotorres28@hotmail.com</a></li>
+                <li><a href="about.html">>CA. Los Angeles</a></li>
+              </ul>
+            </div>
+            <div class="box-link">
+              <h2>Social Media</h2>
+              <ul>
+                <li><a href="/">>Facebook</a></li>
+                <li><a href="/">>Instagram</a></li>
+                <li><a href="/">>Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+
+
             <hr>
-            <p class="footer-navigation">© Cuautla Chamber of Commerce <span id="currentYear"></span> | <b>Emiliano B. Torres</b> | WDD 230 Project | Mexico Last Updated:<span id="lastModified"></span></p>
+            <p class="footer-navigation">© Bountiful Foods <span id="currentYear"></span> | <b>Emiliano B. Torres</b> | WDD 230 Final Project | Mexico Last Updated:<span id="lastModified"></span></p>
         </footer>
         
         <script src="scripts/script.js" async defer></script>
         <script src="scripts/slider.js" async defer></script>
+        <script src="scripts/weather.js" async defer></script>
+        <script src="scripts/juice-count.js" async defer></script>
         
     </body>
 </html>

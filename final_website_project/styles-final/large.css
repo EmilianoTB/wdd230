@@ -235,16 +235,15 @@ transform: rotate(45deg) translate(-5px, -7px);
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* first column is twice the size of second column */
-  grid-gap: 10px; /* spacing between the columns */
+  grid-template-columns: 2fr 1fr; /* On large sizes, first column is bigger than the right one */
+  grid-gap: 20px;
+  width: 100%;
   margin-top: -300px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .left {
  
-  height: 300px; /* adjust to your desired size */
+  
   display: flex;
   align-items: center;
   background-image: url("../images-final/beach2.jpg");
@@ -276,14 +275,15 @@ transform: rotate(45deg) translate(-5px, -7px);
 }
 
 .right {
-  border: 1px solid black;
-  height: 300px;
+ 
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: linear-gradient(90deg, rgba(244,67,53,1) 17%, rgba(255,220,0,1) 48%, rgba(2,169,244,1) 96%);
+  box-shadow: 0px 0px 9px 2px #94C668;
 }
 
 /* call to action to do a fruit drink*/
@@ -340,23 +340,18 @@ transform: rotate(45deg) translate(-5px, -7px);
 
 
 
-
-
-
 /* second line*/
 .container2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Three containers of the same size */
   grid-gap: 5px;
   margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-  
+
 }
 
 .square1 {
   height: 300px;
-  width: 490px;
+
   background-image: url("../images-final/sand.jpg");
   background-size: cover;
   box-shadow: 0px 0px 9px 1px #DD9F64;
@@ -378,12 +373,12 @@ transform: rotate(45deg) translate(-5px, -7px);
 .square2 {
   border: 1px solid black;
   height: 300px;
-  width: 490px;
+  border-radius: 5%;
+
 }
 .square3 {
 
   height: 300px;
-  width: 490px;
   background-image: url("../images-final/fruit.jpg");
   background-size: cover;
   box-shadow: 0px 0px 9px 1px #C4580B;
@@ -392,16 +387,345 @@ transform: rotate(45deg) translate(-5px, -7px);
   align-items: center;
 }
 
-
-.column-big {
-  border: 1px solid black;
+.container3{
+  display: grid;
   height: 300px;
-  grid-column: 1 / -1; /* make column span full width */
-  margin-top: 320px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(244,53,108,1) 6%, rgba(121,255,0,1) 48%, rgba(2,72,244,1) 99%);
+  box-shadow: 0px 0px 9px 1px #C4580B;
 }
+
+.container3 img{
+ 
+  width: 200px;
+  margin: 0 auto;
+
+
+}
+
+p{
+  font-family: 'Shrikhand', cursive;
+}
+
+
+/*button juice*/
+
+
+/* CSS */
+#create-juice-btn {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+#create-juice-btn:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+#create-juice-btn:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+
+
+
+
+
+
+
+/* call to action*/
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+ 
+  text-align: center;
+}
+
+
 
 
 footer {
-  min-height:50px; 
+
+  text-align: center; /* Center the divs horizontally */
+  background-color: #981D26;
 }
 
+.container-links{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three containers of the same size */
+  grid-gap: 5px;
+  margin-top: 20px;
+  background-color: #981D26;
+  
+}
+
+.box-link {
+  height: 200px;
+}
+
+.box-link > ul{
+  padding: 20px;
+}
+
+.box-link li{
+  padding: 10px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+
+/*banner */
+
+.image-box{
+	position: relative;
+	
+	
+}
+
+.image-box img{
+	height: 200px;
+	width: 100%;
+}
+
+.text-inside{
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	
+}
+
+.image-text{
+	font-size: 70px !important;
+	text-align: center;
+	color: white;
+  font-family: 'Shrikhand', cursive;
+}
+
+
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  background-color: #E6D0CA;
+}
+
+legend {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label, input, select, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+}
+/*FORM DESIGN*/
+#order-form{
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+}
+
+input{
+  width: 300px;
+}
+
+textarea{
+  width: 300px;
+}
+
+label{
+  font-size: 20px;
+}
+
+.button-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS */
+.juice-button {
+  background-color: #d4a092;
+  border: 0;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  line-height: 1.75rem; /* 28px */
+  padding: 1rem 1.25rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  
+}
+
+.juice-button:hover {
+  box-shadow: none;
+}
+
+
+/* ORDER SUMMARY*/
+#output-area{
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  padding: 20px;
+  margin: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  height: 650px;
+  font-size: 20px;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(181,129,190,1) 26%, rgba(124,215,122,1) 55%, rgba(253,187,45,1) 88%);
+  margin-top: 40px;
+}
+
+#output-area p{
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+#output-area ul{
+  padding: 20px;
+}
+
+#output-area li{
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.big-container-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fresh-body{
+ height: 1400px;
+}
+
+#output-area h2{
+  font-size: 25px;
+}
+
+
+
+#output-area ul{
+  padding: 15px;
+}
+
+/* about us page css*/
+
+.granada{
+  width: 400px;
+}
+
+.about-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.left-about{
+  margin: 200px 100px 200px 50px;
+  
+}
+
+.right-about{
+  margin: 100px 200px 200px 200px; 
+  background-image: url("../images-final/granada.jpg");
+  background-size: cover; /* para cubrir todo el fondo */
+  background-position: center; /* para centrar la imagen */
+  height: 700px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  
+
+}
+
+
+.title-fruit{
+  font-size: 30px;
+}
+
+
+.fruit-story{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+
+.juice-story{
+  padding: 200px;
+  
+}
+
+.juice-story p{
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  
+}
+
+.googlemaps{
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+iframe{
+  width: 100%;
+}
+
+
+.about-body{
+   height: 2500px;
+}
