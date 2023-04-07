@@ -371,11 +371,33 @@ transform: rotate(45deg) translate(-5px, -7px);
 
 
 .square2 {
-  border: 1px solid black;
+  
   height: 300px;
   border-radius: 5%;
-
+  background-image: url("../images-final/weather.jpg");
+  background-size: cover;
 }
+
+.weather-card{
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.current-conditions{
+  color: red;
+}
+
+.forecast{
+  margin-top: 40px;
+  color: yellow;
+}
+
+
+
+
+
 .square3 {
 
   height: 300px;
